@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shannon Entropy and Primitive Roots</title>
+</head>
+<body>
+    <h1>Shannon Entropy and Diversity Measures</h1>
+    <p>The Shannon entropy, introduced by Claude Shannon, is a fundamental measure in information theory that quantifies the uncertainty associated with a probability distribution.</p>
+    <p>Mathematically, for a discrete random variable <em>X</em> with possible values {<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, ..., <em>x</em><sub>n</sub>} and probabilities <em>P</em>(<em>X</em>=<em>x</em><sub>i</sub>) = <em>p</em><sub>i</sub>, the entropy <em>H</em>(<em>X</em>) is defined as:</p>
+    <p><strong>H(X) = - Σ p<sub>i</sub> * log<sub>2</sub>(p<sub>i</sub>)</strong></p>
+    <p>where the sum is taken over all possible values of <em>X</em>. Entropy measures the average amount of information produced by a data source; higher values indicate greater uncertainty or diversity in the distribution.</p>
+
+    <h2>Other Diversity Measures</h2>
+    <ul>
+        <li><strong>Simpson's Index:</strong> Measures the probability that two randomly selected individuals belong to the same species. It is defined as:
+            <p><strong>D = Σ p<sub>i</sub><sup>2</sup></strong></p>
+            <p>where <em>p<sub>i</sub></em> represents the proportion of individuals of species <em>i</em>. Lower values of <em>D</em> indicate greater diversity.</p>
+        </li>
+        <li><strong>Shannon-Wiener Index:</strong> Similar to Shannon entropy, it quantifies species diversity in a community. It is calculated as:
+            <p><strong>H' = - Σ p<sub>i</sub> * ln(p<sub>i</sub>)</strong></p>
+            <p>where <em>p<sub>i</sub></em> is the proportion of individuals of species <em>i</em>, and <em>ln</em> denotes the natural logarithm. Higher values of <em>H'</em> indicate greater diversity.</p>
+        </li>
+    </ul>
+
+    <h1>Primitive Root</h1>
+    <p>In modular arithmetic, a <strong>primitive root modulo <em>p</em></strong> (where <em>p</em> is a prime number) is a number <em>g</em> such that the successive powers of <em>g</em>, computed modulo <em>p</em>, generate all the integers from 1 to <em>p</em>-1.</p>
+    <p>Formally, <em>g</em> is a primitive root modulo <em>p</em> if for every integer <em>a</em> coprime to <em>p</em>, there exists an integer <em>k</em> such that:</p>
+    <p><strong>g<sup>k</sup> ≡ a (mod p)</strong></p>
+
+    <h2>Example:</h2>
+    <p>Consider <em>p = 7</em>. The number <em>3</em> is a primitive root modulo 7 because its successive powers, reduced modulo 7, produce all integers from 1 to 6:</p>
+    <ul>
+        <li>3<sup>1</sup> ≡ 3 (mod 7)</li>
+        <li>3<sup>2</sup> ≡ 9 ≡ 2 (mod 7)</li>
+        <li>3<sup>3</sup> ≡ 27 ≡ 6 (mod 7)</li>
+        <li>3<sup>4</sup> ≡ 81 ≡ 4 (mod 7)</li>
+        <li>3<sup>5</sup> ≡ 243 ≡ 5 (mod 7)</li>
+        <li>3<sup>6</sup> ≡ 729 ≡ 1 (mod 7)</li>
+    </ul>
+    <p>Thus, the powers of 3 cover all integers from 1 to 6 modulo 7, indicating that 3 is a primitive root modulo 7.</p>
+</body>
+</html>
