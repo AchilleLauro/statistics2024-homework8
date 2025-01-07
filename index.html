@@ -41,5 +41,34 @@
         <li>3<sup>6</sup> ≡ 729 ≡ 1 (mod 7)</li>
     </ul>
     <p>Thus, the powers of 3 cover all integers from 1 to 6 modulo 7, indicating that 3 is a primitive root modulo 7.</p>
+
+    <h1>Letter Frequency Analysis & Caesar Cipher</h1>
+    
+    <section>
+        <h2>Step 1: Input Text</h2>
+        <textarea id="inputText" rows="10" cols="50" placeholder="Enter your text here..."></textarea>
+        <button id="analyzeButton">Analyze Frequency</button>
+    </section>
+
+    <section>
+        <h2>Step 2: Caesar Cipher</h2>
+        <label for="shiftValue">Shift Value:</label>
+        <input type="number" id="shiftValue" min="1" max="25" value="1">
+        <button id="encryptButton">Encrypt</button>
+        <button id="decryptButton">Decrypt</button>
+    </section>
+
+    <section>
+        <h2>Frequency Analysis</h2>
+        <canvas id="frequencyChart"></canvas>
+    </section>
+
+    <section>
+        <h2>Results</h2>
+        <p><strong>Encrypted Text:</strong> <span id="encryptedText"></span></p>
+        <p><strong>Decrypted Text:</strong> <span id="decryptedText"></span></p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
